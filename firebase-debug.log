@@ -1,0 +1,62 @@
+[debug] [2021-03-28T13:47:07.842Z] ----------------------------------------------------------------------
+[debug] [2021-03-28T13:47:07.845Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sajidh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-03-28T13:47:07.845Z] CLI Version:   9.8.0
+[debug] [2021-03-28T13:47:07.846Z] Platform:      win32
+[debug] [2021-03-28T13:47:07.846Z] Node Version:  v15.11.0
+[debug] [2021-03-28T13:47:07.847Z] Time:          Sun Mar 28 2021 19:17:07 GMT+0530 (India Standard Time)
+[debug] [2021-03-28T13:47:07.847Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-03-28T13:47:07.853Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-28T13:47:07.854Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Sajidh\Desktop\M-commerce\costume-lk
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using costume-lk. 
+[debug] [2021-03-28T13:48:17.191Z] > refreshing access token with scopes: []
+[debug] [2021-03-28T13:48:17.192Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-28T13:48:17.658Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sun, 28 Mar 2021 13:48:18 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-28T13:48:17.741Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/costume-lk [none]
+[debug] [2021-03-28T13:48:18.322Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/costume-lk 200
+[debug] [2021-03-28T13:48:18.322Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/costume-lk {"projectId":"costume-lk","projectNumber":"757027398519","displayName":"costume-lk","name":"projects/costume-lk","resources":{"hostingSite":"costume-lk","storageBucket":"costume-lk.appspot.com","locationId":"asia-south1"},"state":"ACTIVE"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-03-28T13:48:18.327Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-28T13:48:18.328Z] > authorizing via signed-in user
+[debug] [2021-03-28T13:48:18.328Z] [iam] checking project costume-lk for permissions ["firebase.projects.get"]
+[debug] [2021-03-28T13:48:18.329Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-28T13:48:18.329Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-28T13:48:18.588Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 28 Mar 2021 13:48:19 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-28T13:48:18.660Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/costume-lk:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-03-28T13:48:20.201Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Mar 2021 13:48:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1064","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-28T13:48:20.204Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/costume-lk/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-03-28T13:48:20.206Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/costume-lk/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-03-28T13:48:21.952Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Mar 2021 13:48:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-28T13:48:21.955Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Mar 2021 13:48:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
